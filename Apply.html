@@ -1,0 +1,86 @@
+<!-- apply.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply - Hot Beans Web</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background-color: black; /* background set to black */
+      color: white; /* text set to white */
+    }
+    header, footer { background-color: #111; color: white; text-align: center; padding: 20px; }
+    nav ul { display: flex; list-style: none; justify-content: center; background-color: #222; padding: 0; margin: 0; }
+    nav li { margin: 0 15px; }
+    nav a { color: white; text-decoration: none; padding: 14px 20px; display: block; }
+    nav a:hover { background-color: #444; }
+    section { padding: 40px; text-align: center; background-color: black; }
+    form { display: flex; flex-direction: column; align-items: center; }
+    input, textarea { 
+      margin: 10px; 
+      padding: 10px; 
+      width: 300px; 
+      background-color: white; /* input fields are white */
+      color: black; /* text in input fields is black */
+      border: 1px solid #ccc; 
+    }
+    button { 
+      padding: 10px 20px; 
+      background-color: #FF5733; /* distinct orange for buttons */
+      color: white; 
+      border: none; 
+      cursor: pointer; 
+    }
+    button:hover { background-color: #FF6F4F; }
+    .upload-label {
+      margin: 10px;
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      text-align: left;
+      cursor: pointer;
+      background-color: #FF5733; /* distinct orange for upload button */
+    }
+    .file-input {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Apply to Hot Beans Web</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Team.html">Team</a></li>
+      <li><a href="Jobs.html">Jobs</a></li>
+      <li><a href="Courses.html">Courses</a></li>
+      <li><a href="Apply.html">Apply</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Get in Touch</h2>
+    <p>Interested in working with us or joining our courses? Fill out the form below!</p>
+    <form>
+      <input type="text" placeholder="First Name" required />
+      <input type="text" placeholder="Surname" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <input type="text" placeholder="Job You Are Applying For" required />
+      <textarea placeholder="Tell us about yourself..." rows="5" required></textarea>
+      
+      <label class="upload-label">
+        Upload CV
+        <input type="file" class="file-input" required />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
